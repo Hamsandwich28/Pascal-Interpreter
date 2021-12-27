@@ -1,25 +1,3 @@
-#################
-#   В ЗАДАНИИ   #
-#################
-
-<programm> ::= VAR <identifier_list> BEGIN <operator_list> END.
-<identifier_list> ::= <identifier> | <identifier_list>, <identifier>
-<identifier> ::= a|b|c|...|z
-<operator_list> ::= <operator> | <operator_list> <operator>
-<operator> ::= <assignment_operator> | <enter_operator> | <control_construction>
-<assignment_operator> ::= <identifier> := <arephmetic_or_logical_expression>
-<arephmetic_or_logical_expression> ::= <operand> <operation_sign> <operand> | <operand>
-<operand> ::= <identifier> | <constant>
-<constant> ::= <digit> | <constant><digit>
-<digit> ::= 0 | 1
-<operation_sign> ::= + | - | or | and | shl | shr
-<control_construction> ::= <if>
-<if> ::= IF <condition> then <assignment_operator> else <assignment_operator>
-
-#################
-#   УПРОЩЕНО    #
-#################
-
 <program> ::= PROGRAM <variable> SEMI <block> DOT
 <block> ::= <declarations> <compound_statement>
 <declarations> ::= VAR (<variable_declaration> SEMI)+ | <empty>
